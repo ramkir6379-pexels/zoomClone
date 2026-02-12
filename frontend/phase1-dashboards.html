@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phase 1 Dashboards</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fb; }
+    .header { background: #1f2937; color: #fff; padding: 16px 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; padding: 20px; }
+    .card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 16px; }
+    .metric { font-size: 28px; margin: 8px 0; color: #0f766e; }
+    .chart { height: 90px; background: linear-gradient(90deg,#dbeafe,#cffafe); border-radius: 8px; display:flex; align-items:flex-end; gap:6px; padding:8px; }
+    .bar { width: 12px; background: #0284c7; border-radius: 4px 4px 0 0; }
+  </style>
+</head>
+<body>
+  <div class="header"><h2>AI Classroom - Phase 1 Dashboard Mockups</h2></div>
+  <div class="grid">
+    <div class="card">
+      <h3>Student Dashboard</h3>
+      <p>Attendance</p>
+      <div class="metric">92.5%</div>
+      <p>Engagement Trend</p>
+      <div class="chart">
+        <div class="bar" style="height:45%"></div><div class="bar" style="height:58%"></div><div class="bar" style="height:72%"></div><div class="bar" style="height:68%"></div><div class="bar" style="height:80%"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Teacher Dashboard</h3>
+      <p>Sessions Conducted</p>
+      <div class="metric">28</div>
+      <p>Average Class Engagement</p>
+      <div class="metric">77.4</div>
+    </div>
+    <div class="card">
+      <h3>Admin Dashboard</h3>
+      <p>Institution Performance</p>
+      <div class="metric">78.9</div>
+      <p>Departments: 4 · Sections: 12 · Teachers: 18 · Students: 340</p>
+    </div>
+  </div>
+</body>
+</html>
