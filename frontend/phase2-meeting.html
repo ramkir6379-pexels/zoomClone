@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phase 2 Meeting Mock UI</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+    .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; padding: 16px; min-height: 100vh; }
+    .panel { background: #1e293b; border-radius: 10px; padding: 12px; }
+    .video { background: #334155; border-radius: 8px; height: 200px; display:flex; align-items:center; justify-content:center; margin-bottom:8px; }
+    .controls button { margin-right: 8px; margin-top: 8px; padding: 8px 10px; border: none; border-radius: 6px; cursor: pointer; }
+    .chat { height: 240px; overflow: auto; border: 1px solid #475569; border-radius: 8px; padding: 8px; margin-bottom: 8px; }
+    .badge { background: #0ea5e9; color:#fff; border-radius: 999px; padding: 4px 8px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="panel">
+      <h3>Phase 2 Live Session <span class="badge">2 users max</span></h3>
+      <div class="video">Teacher Stream</div>
+      <div class="video">Student Stream</div>
+      <div class="controls">
+        <button>Camera ON/OFF</button>
+        <button>Mic ON/OFF</button>
+        <button>Raise Hand</button>
+        <button>Share Screen</button>
+        <button>End Session</button>
+      </div>
+    </div>
+    <div class="panel">
+      <h4>Participants</h4>
+      <ul>
+        <li>teacher1 (Host)</li>
+        <li>student1</li>
+      </ul>
+      <h4>Chat</h4>
+      <div class="chat">
+        <p><b>teacher1:</b> Welcome everyone.</p>
+        <p><b>student1:</b> Good morning sir.</p>
+      </div>
+      <input style="width:100%;padding:8px;border-radius:6px;border:none" placeholder="Type message..." />
+    </div>
+  </div>
+</body>
+</html>

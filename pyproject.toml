@@ -1,0 +1,22 @@
+[project]
+name = "zoomclone-foundation"
+version = "0.1.0"
+description = "Phase-0 foundation API for online classroom platform"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.110.0",
+  "uvicorn>=0.29.0",
+  "sqlalchemy>=2.0.0",
+  "pydantic>=2.0.0",
+  "passlib[bcrypt]>=1.7.4",
+  "python-jose[cryptography]>=3.3.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "httpx>=0.27.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
